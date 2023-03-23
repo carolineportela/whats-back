@@ -7,7 +7,7 @@ const getPerfilTelefone = (telefone) => {
 
     jsonContatos.contatos["whats-users"].forEach(contatosDados => {
         if (contatosDados.number == telefone) {
-            jsonPerfil.contacts = contatosDados.contacts
+            jsonPerfil = contatosDados.contacts
             status = true
         }
     })
